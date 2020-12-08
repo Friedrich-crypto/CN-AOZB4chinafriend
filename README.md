@@ -186,6 +186,12 @@ json-RPC基于HTTP协议，所有参数均为数组传入
 - example input:
 
   > curl -i -X POST    -H "Content-Type: application/json"    -d '{"jsonrpc":"2.0","id":"0","method":"tx.filter", "params":[{"from":"0x59110487a1708e6ab267e63","to":"0x0333ba1c7f0be3f617d52cd","asset":"AOZB","amount":100},"0x2741a4faf54934cbcc57eacf92e18a1eb97b299614334a982d124fba6ccc411cc"]}'  127.0.0.1:5006
+  
+**method: tx.sendRaw**
+
+- params: [tx, signature, publicKey]
+
+- 用途: 发送离线签名的tx，需要附上签名及对应的publicKey
 
 
 
